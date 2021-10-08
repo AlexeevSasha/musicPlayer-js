@@ -1,0 +1,157 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff5ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.player-title {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.player-container {
+  height: 600px;
+  width: 400px;
+  background-color: #212121;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+  margin-top: 30px;
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.song-title {
+  margin: 30px 0 0;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.song-artist {
+  margin: 5px 0 0;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #808080;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px auto;
+  height: 4px;
+  width: 85%;
+}
+
+.progress {
+  background: #ff6604;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 66%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #808080;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.current-time,
+.duration {
+  color: #808080;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  margin: 30px 0;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+
+.fas:active {
+  transform: translateY(-1px);
+}
+
+.fa-play {
+  color: #ff6604;
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 90vw;
+  }
+
+  .img-container {
+    height: 250px;
+    width: 250px;
+    left: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
